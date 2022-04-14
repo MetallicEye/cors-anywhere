@@ -10,9 +10,9 @@ var port = process.env.PORT || 8080;
 //LEGACY  var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 //LEGACY  var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
 var originBlacklist = [];
-//var originWhitelist = ["https://angular-ivy-wvkqrs.stackblitz.io", "https://stackblitz.com/edit/angular-ivy-wvkqrs?file=src%2Fapp%2Fapp.component.ts"]; //"https://angular-ivy-wvkqrs.stackblitz.io"
+var originWhitelist = ["https://angular-ivy-wvkqrs.stackblitz.io", "https://stackblitz.com/edit/angular-ivy-wvkqrs"]; //"https://angular-ivy-wvkqrs.stackblitz.io"
 //var originWhitelist = ["https://stackblitz.com", "https://stackblitz.io"];
-var originWhitelist = [];
+//var originWhitelist = [];
 
 function parseEnvList(env) {
   if (!env) {
