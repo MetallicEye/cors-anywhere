@@ -10,7 +10,7 @@ var port = process.env.PORT || 8080;
 //LEGACY  var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 //LEGACY  var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
 var originBlacklist = [];
-var originWhitelist = ["https://angular-ivy-wvkqrs.stackblitz.io"];
+var originWhitelist = []; //"https://angular-ivy-wvkqrs.stackblitz.io"
 
 function parseEnvList(env) {
   if (!env) {
