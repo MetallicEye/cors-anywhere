@@ -11,7 +11,8 @@ var port = process.env.PORT || 8080;
 //LEGACY  var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
 var originBlacklist = [];
 //var originWhitelist = ["https://angular-ivy-wvkqrs.stackblitz.io", "https://stackblitz.com/edit/angular-ivy-wvkqrs?file=src%2Fapp%2Fapp.component.ts"]; //"https://angular-ivy-wvkqrs.stackblitz.io"
-var originWhitelist = ["https://stackblitz.com", "https://stackblitz.io"];
+//var originWhitelist = ["https://stackblitz.com", "https://stackblitz.io"];
+var originWhitelist = [];
 
 function parseEnvList(env) {
   if (!env) {
@@ -27,7 +28,6 @@ var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
   originWhitelist: originWhitelist,
-  //originWhitelist: [],
   requireHeader: ['origin', 'x-requested-with'],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
